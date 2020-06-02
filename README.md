@@ -1,0 +1,2 @@
+# GestionImagenFranciscoAMP
+Realizar una aplicación web siguiendo los patrones de diseño MVC, DAOFactory JSTL. El proyecto se llamará GestionImagenFranciscoAMP más el nombre y las siglas de los apellidos.   Esta aplicación consistirá en un crear usuario, actualizar información del usuario (nombre, fechaNacimiento y avatar), visualizar la información con su avatar y eliminar el usuario (solo un usuario a la vez).
