@@ -24,7 +24,7 @@ public class ConnectionFactory {
     static final String DATA_SOURCE_MYSQL = "java:comp/env/jdbc/Imagenes";
 
 
-    public static Connection getMySQLConnection() {
+    public static Connection getConnection() {
 
         try {
             Context contextoInicial = new InitialContext();
