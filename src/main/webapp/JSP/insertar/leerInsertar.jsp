@@ -1,9 +1,5 @@
-<%-- 
-    Document   : finInsertar
-    Created on : 16-may-2020, 20:23:59
-    Author     : Francisco_Antonio
---%>
-
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix = "fmt" uri = "http://java.sun.com/jsp/jstl/fmt" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -18,16 +14,16 @@
         <title>Insertar nuevo usuario.</title>
     </head>
     <body>
-        <h1>Se ha creado un nuevo usuario.</h1>
+        <h1>Usuario Creado: </h1>
         <form action="ControladorFinal" method="post" class="form-inline">
-            <ul>
-               <li>Id de usuario: <strong><%=request.getParameter("id")%></strong></li>
-               <li>Nombre: <strong><%=request.getParameter("npmbre")%></strong></li>
-               <li>Fecha de nacimiento: <strong><%=request.getParameter("fecha")%></strong></li>
-               <li>avatar: <strong><%=request.getParameter("avatar")%></strong></li>
+            <ul class="list-unstyled">
+               <li>Id de usuario: <strong>${usuario.id}</strong></li>
+               <li>Nombre: <strong>${usuario.nombre}</strong></li>
+               <li>Fecha de nacimiento: <strong>${usuario.fechaNacimiento}</strong></li>
+               <li>avatar: <strong>${usuario.avatar}</strong></li>
             </ul>
 
         </form>
-                        <button type="submit" value="menu" name="operacion">Menú</button>
+        <button type="submit" value="menu" name="operacion">Menú</button>
     </body>
 </html>

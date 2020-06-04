@@ -1,8 +1,3 @@
-<%-- 
-    Document   : index
-    Created on : 02-jun-2020, 20:55:47
-    Author     : Framcisco_Antonio
---%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>

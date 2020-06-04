@@ -8,16 +8,16 @@ import java.sql.Date;
  * @author Framcisco_Antonio
  */
 public class Usuario {
-    private int id;
+    private Byte id;
     private String nombre;
     private Date fechaNacimiento;
     private String avatar;
 
-    public int getId() {
+    public Byte getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Byte id) {
         this.id = id;
     }
 

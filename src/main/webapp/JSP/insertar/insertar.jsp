@@ -1,8 +1,3 @@
-<%-- 
-    Document   : inicioInsertar
-    Created on : 16-may-2020, 20:23:41
-    Author     : Francisco_Antonio
---%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>

@@ -10,7 +10,7 @@
         <title>Actualizar Datos.</title>
     </head>
     <body>
-        <form class="needs-validation" action="Realizar" method="post">
+        <form class="needs-validation" action="" method="post">
             <div class="container">
             <h1>Actualizar Datos de usuario.</h1>
                 <div class="row align-items-center">
@@ -34,7 +34,7 @@
                             <input type="file" class="form-control-file border" name="avatar">
                         </div>
                         <button type="submit" value="cancelar" name="operacion">Cancelar</button>
-                        <button id="insertar" type="submit" value="insertarUsuario" name="operacion">Crear usaurio</button> 
+                        <button id="insertar" type="submit" value="insertarUsuario" name="operacion">Actualizar usaurio</button> 
 
                     </div>    
                 </div>

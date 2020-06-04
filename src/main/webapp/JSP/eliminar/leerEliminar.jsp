@@ -1,7 +1,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix = "fmt" uri = "http://java.sun.com/jsp/jstl/fmt" %>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -11,23 +11,23 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
         <%@include file="/INC/metas.inc"%>
-        <link rel="stylesheet" type="text/css" href="CSS/gestionImgenesStyle.css">
-        <title>Actualizar usuarios.</title>
+        <link rel="stylesheet" type="text/css" href="CSS/gestionImagenesStyle.css">
+        <title>Elecci&oacute;n del usuario a eliminar.</title>
     </head>
 
-    
     <body>
+        <h1>Seleccione el usuario a ELIMINAR:</h1>
         
-        <form action="Realizar" method="post">
+        <form action="<%=request.getContextPath()%>Realizar" method="post">
             <h2>Marque el usuario a actualizar. </h2>
             <c:forEach var="usuario" items="${usuarios}">
-                <input type="checkbox" value="${usuario.id}" name="alumnosActualizar"><label id="listadoActualizar">${usuario.nombre}</label>
+                <input type="checkbox" value="${usuario.id}" name="alumnosEliminar"><label id="listadoEliminar">${usuario.nombre}</label>
                 <br>
             </c:forEach>
             <br><br>
 
             <button type="submit" value="cancelar" name="operacion">Cancelar</button>
-            <button id="actualizar" type="submit" value="aceptarActualizar" name="operacion">Actualizar</button>
-        </form>
+            <button id="actualizar" type="submit" value="aceptarEliminar" name="operacion">Eliminar</button>
+        </form>>
     </body>
 </html>
