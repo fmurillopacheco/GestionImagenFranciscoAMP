@@ -15,7 +15,7 @@ import java.util.Collection;
  */
 
 public class UsuariosDAO implements IUsuariosDAO {
-
+@Override
     public ArrayList<Usuario> leerUsuarios() {
         ArrayList<Usuario> lista = new ArrayList();
         String consulta = "Select * from usuarios";
@@ -134,6 +134,16 @@ public class UsuariosDAO implements IUsuariosDAO {
         }
 
         return Usuario;
+    }
+
+    @Override
+    public Usuario getUsuario(byte id) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void closeConnection() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
 }

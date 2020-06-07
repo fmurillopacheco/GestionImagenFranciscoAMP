@@ -12,60 +12,104 @@
         <title>Men&uacute; Gesti&oacute;n de Im&aacute;genes.</title>
     </head>
     <body>
+        <div class="jumbotron text-center">
+            <h1>Men&uacute; Tratamiento de Im&aacute;genes.</h1>
+
+        </div>
         <form action="operacion" method="post">
-            <h1 id="servidor">Men&uacute; Tratamiento de Im&aacute;genes.</h1>
-            
-            
-                <h3 id="servidor"> En el Servidor.</h3>
-                <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col sm-6">
-                            <div class="dropdown dropright">
-                                <div class="dropdown dropright">
-                                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">A&ntilde;adir</button>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#">A&ntilde;adir.</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <br>
-                            <div class="dropdown dropright">
-                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Actualizar</button>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item" href="#">commons.FileUpload</a>
-                                        <a class="dropdown-item" href="#">Clase Part</a>
-                                    </div>
-                            </div>
-                            <br>
-                            <div class="dropdown dropright">
-                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Visualizar</button>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">commons.FileUpload</a>
-                                    <a class="dropdown-item" href="#">Clase Part</a>
-                                </div>
-                            </div>
-                            <br>
-                            <div class="dropdown dropright">
-                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Eliminar</button>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">Eliminar.</a>
-                                </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h3>Men&uacute; de Im&aacute;genes en el Servidor.</h3> 
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary">A&ntilde;adir</button>
+                            <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="JSP/insertar/insertar.jsp">A&ntilde;adir usuario.</a>
+<!--                        <a class="dropdown-item" href="#">Link 2</a>-->
                             </div>
                         </div>
-            <br>
-                    <h3 id="servidor"> Im&aacute;genes.</h3>
-                        <div class="col sm-6">
-                            <div class="dropdown dropright">
-                                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">Visualizar</button>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="#">commons.FileUpload</a>
-                                    <a class="dropdown-item" href="#">Clase Part</a>
-                                </div>
+  
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-secondary">Actualizar</button>
+                            <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="JSP/actualizar/actualizar.jsp">Actualizar usuario - FileUpload.</a>
+                                <a class="dropdown-item" href="JSP/actualizar/actualizar.jsp">Actualizar usuario - Part.</a>
+                            </div>
+                        </div>
+
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-success">Visualizar</button>
+                            <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="JSP/visualizar/visualizar.jsp">Visualizar usuario - FileUpload.</a>
+                                <a class="dropdown-item" href="JSP/visualizar/visualizar.jsp">Visualizar usuario - Part.</a>
+                            </div>
+                        </div>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-danger">Eliminar</button>
+                            <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="JSP/eliminar/eliminar.jsp">Eliminar usuarios.</a>
+
+                            </div>
+                        </div>
+                        <br><br><br>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-warning">Ajax</button>
+                            <button type="button" class="btn btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="JSP/actualizar/actualizar.jsp">Actualizar avatar por AJAX.</a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-3">
+                        <h3>Men&uacute; de Im&aacute;genes en en la Base de Datos.</h3> 
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary">A&ntilde;adir</button>
+                            <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">A&ntilde;adir usuario.</a>
+                            </div>
+                        </div>
+  
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-secondary">Actualizar</button>
+                            <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Actualizar usuario.</a>
+                            </div>
+                        </div>
+
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-success">Visualizar</button>
+                            <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Visualizar usuario.</a>
+                            </div>
+                        </div>
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-danger">Eliminar</button>
+                            <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown">
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Eliminar usuarios.</a>
+
                             </div>
                         </div>
                     </div>
                 </div>
-            <br>
+            </div>
         </form>
     </body>
 </html>

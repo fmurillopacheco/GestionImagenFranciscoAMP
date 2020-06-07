@@ -10,28 +10,34 @@
         <title>Actualizar Datos.</title>
     </head>
     <body>
-        <form class="needs-validation" action="" method="post">
+        <form class="needs-validation" action="/realizar" method="post">
             <div class="container">
             <h1>Actualizar Datos de usuario.</h1>
                 <div class="row align-items-center">
                     <div class="col sm-4">
                         <div class="form-group">
-                            <label for="id">IdUsuario: </label>
+                            <label for="id">IdUsuario: ${usuario.id}</label>
                         </div>
                         <div class="form-group">
                             <label for="nombreUsu">Usuario:</label>
-                            <input type="text" class="form-control" placeholder="Enter username" name="nombreUsu" required>
+                            <input type="text" class="form-control" placeholder="Introduce Usuario." name="nombreUsu" value="${usuario.nombre}">
                             <div class="valid-feedback">OK.</div>
                             <div class="invalid-feedback">Por favor, rellena este campo.</div>
                         </div>
+                        <div class="form-group">
+                            <label for="apellidos">Apellidos:</label>
+                            <input type="text" class="form-control" placeholder="Introduce Apellidos." name="apellidos" value="${usuario.apellidos}">
+                            <div class="valid-feedback">OK.</div>
+                            <div class="invalid-feedback">Por favor, rellena este campo.</div>
+                        </div>                        
                         <div class="form-group">
                             <label for="fecha">Fecha de nacimiento:</label>
-                            <input type="date" class="form-control" placeholder="Fecha de nacimiento" name="fecha" required>
+                            <input type="date" class="form-control" name="fecha" ${usuario.fecha}>
                             <div class="valid-feedback">OK.</div>
                             <div class="invalid-feedback">Por favor, rellena este campo.</div>
                         </div>
                         <div class="form-group">
-                            <input type="file" class="form-control-file border" name="avatar">
+                            <input type="file" class="form-control-file border" name="avatar" value="${usuario.avatar}">
                         </div>
                         <button type="submit" value="cancelar" name="operacion">Cancelar</button>
                         <button id="insertar" type="submit" value="insertarUsuario" name="operacion">Actualizar usaurio</button> 
@@ -39,5 +45,6 @@
                     </div>    
                 </div>
             </div>
+        </form>
     </body>
 </html>
